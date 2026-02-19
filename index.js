@@ -1,9 +1,9 @@
+import "dotenv/config";
 import express from "express"
 import homeRouter from "./routes/homepageRoutes.js"
 import asiapageRoutes from "./routes/asiapageRoutes.js"
 import europeRoutes from "./routes/europepageRoutes.js"
 
-dotenv.config()
 
 const app = express()
 
