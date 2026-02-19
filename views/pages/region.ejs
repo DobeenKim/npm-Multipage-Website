@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include(`../partials/head`) %>
+  <body>
+    <div class="visual_region">
+      <%- include(`../partials/header`) %>
+      <div class="titleBox">
+        <h2 class="title"><%= info.title %></h2>
+      </div>
+    </div>
+    <div class="main">
+      <div class="region_imgBox">
+        <p class="img_region"><img src="<%= info.image02 %>" alt="<%= info.image %>"></p>
+        <p class="img_region"><img src="<%= info.image03 %>" alt="<%= info.image %>"></p>
+        <p class="img_region"><img src="<%= info.image01 %>" alt="<%= info.image %>"></p>
+      </div>
+      <h4 class="subTitle"><%= info.description %></h4>
+      <div class="region_imgBox">
+        <% countries.forEach(country => { %>
+          <div class="region_imgWrap">
+            <a href="/<%= currentRegion %>/<%= country.id %>">
+              <h3 class="name"><%= country.name %></h3>
+              <p class="img_region">
+                <img src="<%= country.thumbnail %>" alt="<% country.name %>">
+              </p>
+            </a>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+    <%- include(`../partials/footer`) %>
+  </body>
+</html>

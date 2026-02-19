@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include(`../partials/head`) %>
+  <body>
+    <div class="visual">
+      <%- include(`../partials/header`) %>
+      <div class="titleBox">
+        <h2 class="title"><%= introData.title %></h2>
+        <h2 class="title02"><%= introData.title02 %></h2>
+      </div>
+    </div>
+    <div class="main">
+      <div class="welcomeMsgBox">
+        <h5 class="welcomeMsg01"><%= introData.welcomeMsg %></h5>
+        <h3 class="welcomeMsg02"><%= introData.welcomeMsg02 %></h3>
+        <h5 class="welcomeMsg03"><%= introData.welcomeMsg03 %></h5>
+      </div>
+      <div class="imgBox">
+        <p class="img"><img src="<%= introData.image01 %>" alt="<%= introData.image %>"></p>
+        <div class="imgWrap">
+          <p class="img"><img src="<%= introData.image04 %>" alt="<%= introData.image %>"></p>
+          <p class="img"><img src="<%= introData.image02 %>" alt="<%= introData.image %>"></p>
+        </div>
+      </div>
+      <div class="intro-text">
+        <h3 class="subTitle"><%= introData.subtitle %></h3>
+        <h4 class="description"><%= introData.description %></h4>
+      </div>
+      <div class="imgBox">
+        <p class="img"><img src="<%= introData.image03 %>" alt="<%= introData.image %>"></p>
+        <p class="img"><img src="<%= introData.image05 %>" alt="<%= introData.image %>"></p>
+      </div>
+    </div>
+    <div class="footer"><%- include(`../partials/footer`) %></div>
+  </body>
+</html>

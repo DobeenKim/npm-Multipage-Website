@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include(`../partials/head`) %>
+  <body>
+  <div class="visual_detail">
+      <%- include(`../partials/header`) %>
+      <div class="titleBox">
+        <h2 class="title"><%= info.title %></h2>
+      </div>
+  </div>
+  <div class="main">
+    <div class="intro-text">
+      <h4 class="description"><%= info.description %></h4>
+    </div>
+    <div class="place-card">
+      <p class="detail_img"><img src="<%= info.image %>" alt="<%= info.place %>"></p>
+      <h3 class="name"><%= info.place %></h3>
+    </div>
+    <div class="place-card">
+      <p class="detail_img"><img src="<%= info.image02 %>" alt="<%= info.place %>"></p>
+      <h3 class="name"><%= info.place02 %></h3>
+    </div>
+    <div class="place-card">
+      <p class="detail_img"><img src="<%= info.image03 %>" alt="<%= info.place %>"></p>
+      <h3 class="name"><%= info.place03 %></h3>
+    </div>
+  </div>
+    <%- include(`../partials/footer`) %>
+  </body>
+</html>
