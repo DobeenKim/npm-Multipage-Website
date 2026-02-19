@@ -9,8 +9,6 @@ const app = express()
 
 app.set("view engine", "ejs");
 
-const port = process.env.PORT || 3000
-
 app.use(express.static(`public`))
 
 app.use(`/`, homeRouter)
@@ -25,6 +23,8 @@ app.use((req, res) => {
     <a href="/">Back to Homepage</a>
   `)
 })
+
+const port = process.env.PORT || 1234;
 
 app.listen(port, () => {
     console.log(`Server is running on: http://localhost:${port}`);
