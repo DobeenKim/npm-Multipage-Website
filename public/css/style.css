@@ -162,7 +162,7 @@ img {
   text-align: center;
   color: var(--tertiary);
   gap: 24px;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -193,7 +193,7 @@ img {
 .region_imgBox {
   width: 100%;
   display: flex;
-  padding: 150px 0;
+  padding: 80px 0;
   gap: 24px;
   flex-direction: column;
   margin: 0 auto;
@@ -306,7 +306,6 @@ img {
   }
 
   .imgBox {
-    width: 80%;
     margin: 0 auto;
   }
 
