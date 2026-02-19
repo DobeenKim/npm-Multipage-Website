@@ -327,6 +327,10 @@ img {
     transform: scale(1.1);
   }
 
+  .region_imgWrap:hover .name{
+    color: var(--primary);
+  }
+
   .detail_img {
     width: 70%;
   }
